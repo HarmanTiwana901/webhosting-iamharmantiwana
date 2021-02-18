@@ -1,0 +1,152 @@
+#whyus-wrapper {
+    position: relative;
+    top: -21px;
+    height: 715px;
+    background-color: #F3ECEC;
+    width: 100%;
+    max-height: 715px;
+    
+
+}   
+
+#whyus-content-container {
+    position: relative;
+    top: 128px;
+    
+    width: 81%;
+    height: 475px;
+    margin: auto;
+}
+
+#wu-subheading {  
+    width: 100%;
+    height: 20px;
+    font-family: robolight;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 23px;
+    margin: 0;
+    color: #000000;
+    text-align: left;
+}
+
+#wu-heading {
+    font-family: robomedium;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 42px;
+    float: left;
+    color: #000000;
+    margin: 0;
+    text-align: left;
+}
+
+#wu-section-bottom-hidden {
+    border: none;
+}
+
+#wu-reasons-grid-container {
+    position: relative;
+    top: 0px;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    float: left;
+    margin-top: 100px;
+    width: 100%;
+
+    font-family: robolight;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 27px;
+    text-align: left;
+    color: #000000;
+}
+
+.wu-section {
+    border-left: solid 5px #C3073F;
+    width: 100%;
+    height: 75px;
+}
+
+.wu-desc {
+    margin: 0;
+    padding-left: 29px; 
+    width: 100%;
+}
+
+.wu-section-bottom{
+    position: relative;
+    top: 30px;
+}
+
+#wu-section-bottom, #wu-section-bottom-hidden {
+    margin-top: 80px;
+}
+
+/* responsive */
+
+@media(max-width: 1503px) {
+    .wu-desc {
+        font-size: 14px;
+        width: 80%;  
+    }
+}
+
+@media(max-width: 653px) {
+    #whyus-content-container {
+        position: relative;
+        top: 100px;
+        height: 520px;
+        max-height: 520px;
+    }
+    #wu-reasons-grid-container {
+        display: block;
+        margin: 0;
+        margin-top: 30px;
+        height: 386px;
+        max-height: 386px;
+    }
+    #wu-heading {
+        font-size: 30px;
+        position: relative;
+        display: block;
+    }
+
+    #wu-subheading {
+        font-size: 15px;
+        position: relative;
+        display: block;
+        
+    }
+
+    .wu-desc {
+        max-height: 108px;
+    }
+
+    #wu-sec-2 {
+        margin-top: 80px;
+    }
+}
+
+@media(max-width: 306px) {
+    #wu-subheading {
+        margin-bottom: 15px;
+    }
+}
+
+/* fonts */
+
+@font-face {
+    font-family: robomedium;
+    src: url("./fonts/Roboto-Medium.ttf");
+}
+
+@font-face {
+    font-family: robolight;
+    src: url("./fonts/Roboto-Light.ttf");
+}

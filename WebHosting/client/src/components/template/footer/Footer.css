@@ -1,0 +1,43 @@
+#footer-wrapper {
+    width: 100%;
+    background-color: #111112;
+    position: absolute;
+    height: 128px;
+    left: 0; 
+    bottom: 0;
+    overflow: hidden;   
+} 
+
+#footer-text-container {
+    width: 100%;
+    margin: auto;
+    height: 100%;
+}
+
+#footer-text-container > h1 {
+    position: relative;
+    top: 55px;
+    float: left;
+    margin: 0;
+    font-family: robomedium;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+    width: 100%;
+    opacity: 0.21;
+}
+
+/* fonts */
+
+@font-face {
+    font-family: robomedium;
+    src: url("./fonts/Roboto-Medium.ttf");
+}
+
+@font-face {
+    font-family: robolight;
+    src: url("./fonts/Roboto-Light.ttf");
+}

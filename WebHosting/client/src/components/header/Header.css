@@ -1,0 +1,75 @@
+#header-wrapper {
+    position: relative;
+    top: -21px;
+    width: 100%;
+    height: 535px;
+    max-height: 535px;
+    background: #1A1A1D;
+}
+
+#header-content-container {
+    position: relative;
+    top: 130px;
+    margin: auto;
+    width: 81%;
+    height: 250px;
+}
+
+#header-title, #header-desc {
+    text-align: left;
+}
+
+#header-title {
+    font-family: robomedium;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 37px;
+    color: #C3073F;
+}
+
+#header-desc {
+    position: relative;
+    top: -10px;
+    font-family: robolight;
+    font-weight: 100;
+    font-size: 21px;
+    line-height: 25px;
+    color: white;
+}
+
+#header-btn {
+    font-family: robolight;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+    width: 184px;
+    height: 50px;
+    color: white;
+    float: left;
+    border: 1px solid #C3073F;
+    box-sizing: border-box;
+    background: transparent;
+}
+
+@media(max-width: 550px) {
+    #header-title {
+        font-size: 27px;
+    }
+    #header-desc {
+        font-size: 15px;
+    }
+}
+
+/* fonts */
+
+@font-face {
+    font-family: robomedium;
+    src: url("./fonts/Roboto-Medium.ttf");
+}
+
+@font-face {
+    font-family: robolight;
+    src: url("./fonts/Roboto-Light.ttf");
+}

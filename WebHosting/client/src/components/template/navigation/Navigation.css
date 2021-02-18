@@ -1,0 +1,284 @@
+#navigation-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    max-height: 100px;
+    background: #1A1A1D;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+#subnavigation-wrapper {
+    position: relative;
+    width: 100%;
+    height: 43px;
+    max-height: 43px;
+    background-color: #121213
+}
+
+#subnav-links {
+    width: 42%;
+    position: relative; 
+    height: 43px;
+    display: flex;
+    justify-content: center;
+}
+
+.sn-link {
+    position: relative;
+    top: 13px;
+    color: white;
+    z-index: 2;
+    width: 100px;
+    font-family: robolight;
+    opacity: .5;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 15px;
+}
+
+#links-container {
+    position: relative;
+    top: 20px;
+    width: 55%;
+}
+
+#button-container {
+    position: relative;
+    top: 20px;
+    width: 503px;
+}
+
+.link-pad, #hosting {
+    position: relative;
+    top: 45px;
+    color: white;
+    text-decoration: none;
+    float: left;
+    font-family: robotolight;
+    font-size: 17px;
+}
+
+.link-pad {
+    padding-left: 105px;
+}
+
+#join-btn, #cpanel-btn {
+    position: relative;
+    top: 30px;
+    width: 184px;
+    height: 50px;
+    border: 1px solid #C3073F;
+    box-sizing: border-box;
+    background: transparent;
+    color: white;
+    font-family: robotolight;
+    font-size: 17px;
+}
+
+#join-btn {
+    margin-left: 70px;
+}
+
+#cpanel-btn {
+    float: right;
+}
+
+#nav-icon {
+    display: inline-block;
+    cursor: pointer;
+    height: 5px;
+    z-index: 2;
+}
+
+#nav-icon > #bar1 {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+    
+    border-radius: 5px;
+}
+#nav-icon > #bar2 {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+    
+    border-radius: 5px;
+}
+
+#bar1.change {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px); 
+}
+  
+ #bar2.change {
+     opacity: 0;
+}
+  
+  #bar3.change {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
+
+#nav-icon > #bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+   
+    
+    border-radius: 5px;
+}
+
+.hidden, #nav-icon {
+    display: none;
+    z-index: 3;
+}
+
+/* hidden nav */
+
+#nav-content-hidden {
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    max-height: 0px;
+    background-color: black;
+    z-index: 2;
+    opacity: .9;
+    transition: max-height 0.4s;
+}
+
+#nav-content-hidden.showNav {
+    
+    max-height: 400px;
+}
+
+#subnav-links-hidden {
+    position: relative;
+    top: 120px;
+    width: 89.5%;
+    margin: auto;
+    display: none;
+    transition: display .9s;
+}
+
+#join-btn-hidden, #cpanel-btn-hidden {
+    width: 164px;
+    height: 40px;
+    border: 1px solid #C3073F;
+    box-sizing: border-box;
+    background: transparent;
+    color: white;
+    font-family: robotolight;
+    font-size: 15px;
+    display: none;    
+}
+
+.link-hidden {
+    color: white;
+    text-decoration: none;
+    font-family: robotolight;
+    display: none;
+    text-align: left;
+    padding-top: 16px;
+    transition: display .9s;
+}
+
+#subnav-links-hidden.show {
+    display: block;
+}
+
+.link-hidden, .show {
+    display: block;
+}
+
+#subnav-btn-hidden {
+    position: relative;
+    top: 150px;
+    width: 89.5%;
+    height: 50px;
+    margin: auto;
+    
+}
+
+/* responsive */
+
+@media(max-width: 1482px) {
+    .link-pad, #hosting {
+        display: none;
+    }
+
+    .hidden, #nav-icon {
+        position: relative;
+        top: 45px;
+        display: block;
+        float: left;
+    }
+}
+
+@media(min-width: 1482px) {
+    #nav-content-hidden {
+        display: none;
+    }
+}
+
+@media(max-width: 1275px) {
+    #links-container {
+        padding-left: 40px;
+    }
+
+    #button-container {
+        padding-right: 40px;
+        width: 703px;
+    }
+}
+
+@media(max-width: 1016px) {
+    #subnav-links {
+        width: 100%;
+        margin: auto;
+    }
+}
+
+@media(max-width: 884px) {
+    #button-container {
+        width: 1000px;
+    }
+}
+
+@media(max-width: 722px) {
+    #links-container {
+        width: 100%;
+    }
+    #button-container {
+        display: none;
+    }
+    #join-btn-hidden.btnshowj {
+        display: block;
+        margin: 0;
+        
+        float: left;
+    }
+    
+    #cpanel-btn-hidden.btnshowc {
+        display: inline-block;
+        margin: 0;
+        float: left;
+        margin-left: 33px;
+    }
+    
+}
+
+
+/* font */
+
+@font-face {
+    font-family: robotolight;
+    src: url("./fonts/Roboto-Light.ttf");
+}

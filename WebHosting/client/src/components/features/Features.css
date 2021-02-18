@@ -1,0 +1,103 @@
+#features-wrapper {
+    width: 100%;
+    height: 424px;
+    background-color: #1A1A1D;
+    position: relative;
+    top: -21px;
+    display: flex;
+    justify-content: center;
+   
+}
+
+
+
+.feature-container {
+    height: 210px;
+    width: 427px;
+    
+    margin: 85px;
+}
+
+.feature-container > img {
+    margin: 0;
+}
+
+.feature-container > h1 {
+    margin: 0;
+    font-family: robomedium;
+   
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 27px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.feature-container > p {
+    font-family: robolight;
+    
+    font-weight: 100;
+    font-size: 17px;
+    line-height: 22px;
+    text-align: center;
+    color: white;
+}
+
+.feature-container > h4 {
+    margin: 0;
+    font-family: robolight;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 37px;
+    line-height: 43px;
+    text-align: center;
+
+    color: rgba(255, 255, 255, 0.18);
+
+}
+
+/* responsive */
+
+@media(max-width: 969px) {
+    .feature-container {
+        margin: 20px;
+        margin-top: 100px;
+        width: 300px;
+    }
+    .feature-container > p {
+        font-size: 14px;
+    }
+}
+
+@media(max-width: 552px) {
+    .feature-container > p {
+        font-size: 12px;
+    }
+}
+
+@media(max-width: 447px) {
+    .feature-container {
+        margin-top: 30px;
+    }
+    
+    .feature-container > h1 {
+        font-size: 19px;
+    }
+    
+    .feature-container > P {
+        font-size: 12px;
+    }
+}
+
+/* fonts */
+
+@font-face {
+    font-family: robomedium;
+    src: url("./fonts/Roboto-Medium.ttf");
+}
+
+@font-face {
+    font-family: robolight;
+    src: url("./fonts/Roboto-Light.ttf");
+}

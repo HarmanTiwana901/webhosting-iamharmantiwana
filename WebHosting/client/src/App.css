@@ -1,0 +1,30 @@
+body {
+  max-height: 100%;
+  overflow-x: hidden;
+  margin: 0 0 105px;
+  padding: 0;
+  width: 100%;
+  background: #1A1A1D;
+}
+
+button {
+  -webkit-appearance: none;
+  
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+.App {
+  text-align: center;
+  
+}
+
+@media(max-width: 280px) {
+  body,html,.App {
+    display: none;
+  }
+}
+

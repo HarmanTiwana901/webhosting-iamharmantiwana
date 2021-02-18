@@ -1,0 +1,138 @@
+#graph-wrapper {
+    position: relative;
+    top: -21px;
+    width: 100%;
+    height: 498px;
+    background: #F3ECEC;
+}
+
+#graph-container {
+    display: grid;
+    grid-template-columns: .75fr 1fr;
+
+}
+
+#l-graph-wrapper > img {
+    z-index: 2;
+    margin: 0;
+    position: relative;
+    top: 78px;
+}
+
+#r-graph-wrapper > h1 {
+    position: relative;
+    top: 140px;
+    font-family: robomedium;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 46px;
+    line-height: 24px;
+    text-align: center;
+    color: #000000;
+}
+
+#r-graph-wrapper > p {
+    position: relative;
+    top: 140px;
+    width: 60%;
+    text-align: center;
+    margin: auto;
+    font-family: robolight;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 19px;
+    line-height: 22px;
+    text-align: center;
+}
+
+#learnmore-btn {
+    position: relative;
+    top: 160px;
+    width: 183px;
+    height: 55px;
+    background: #C3073F;
+    border-radius: 11px;
+    border: none;
+    font-family: robomedium;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 22px;
+    text-align: center;
+    color: white;
+}
+
+/* fonts */
+
+@font-face {
+    font-family: robomedium;
+    src: url("./fonts/Roboto-Medium.ttf");
+}
+
+@font-face {
+    font-family: robolight;
+    src: url("./fonts/Roboto-Light.ttf");
+}
+
+/* responsive */
+
+@media(max-width: 1148px) {
+    #l-graph-wrapper > img {
+        position: relative;
+        top: 130px;
+        height: 250px;
+    }
+
+    #r-graph-wrapper > h1 {
+        font-size: 35px;
+    }
+    #r-graph-wrapper > p {
+        font-size: 15px;
+    }
+}
+
+@media(max-width: 767px) {
+
+    #r-graph-wrapper > h1 {
+        line-height: 40px;
+    }
+    #l-graph-wrapper > img {
+        top: 150px;
+        height: 200px;
+        
+    }
+
+    #hidden {
+        display: none;
+    }
+}
+
+@media(max-width: 576px) {
+    #l-graph-wrapper > img {
+        top: 215px;
+        height: 165px;
+    }
+}
+
+@media(max-width: 452px) {
+    #r-graph-wrapper > h1 {
+        font-size: 18px;
+    }
+    #l-graph-wrapper > img {
+        height: 145px;
+    }
+}
+
+@media(max-width: 405px) {
+    #l-graph-wrapper {
+        display: none;
+    }
+    #graph-container {
+        position: absolute;
+        display: block;
+    }
+
+    #r-graph-wrapper > h1 {
+        font-size: 25px;
+    }
+}

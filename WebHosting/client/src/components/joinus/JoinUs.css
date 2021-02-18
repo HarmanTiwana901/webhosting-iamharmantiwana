@@ -1,0 +1,81 @@
+#joinus-wrapper {
+    width: 100%;
+    height: 289px;
+    background-color: #1A1A1D;
+    position: relative;
+    top: -21px;
+}
+
+#joinus-wrapper > h1 {
+    margin: 0px;
+    padding: 0;
+    position: relative;
+    top: 65px;
+    font-family: robomedium;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 54px;
+    text-align: center;
+    color: white;
+}
+
+#joinus-wrapper > p {
+    margin: 0px;
+    padding: 0;
+    position: relative;
+    top: 80px;
+    font-family: robolight;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 22px;
+    text-align: center;
+
+    color: white;
+
+}
+
+#joinus-wrapper > button {
+    width: 184px;
+    height: 48px;
+    position: relative;
+    top: 100px;
+    border: none;
+    font-family: robomedium;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 22px;
+    text-align: center;
+    background: #C3073F;
+    border-radius: 4px;
+    color: white;
+}
+
+@media(max-width: 480px) {
+    #joinus-wrapper > h1 {
+        font-size: 20px;
+    }
+    #joinus-wrapper > p {
+        font-size: 12px;
+    }
+
+    #joinus-wrapper > button {
+        width: 150px;
+        height: 40px;
+        font-size: 14px;
+    }
+}
+
+/* fonts */
+
+@font-face {
+    font-family: robomedium;
+    src: url("./fonts/Roboto-Medium.ttf");
+}
+
+@font-face {
+    font-family: robolight;
+    src: url("./fonts/Roboto-Light.ttf");
+}
